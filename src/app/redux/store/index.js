@@ -1,17 +1,17 @@
-import { compose, createStore } from 'redux';
-import { persistReducer, persistStore } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import rootReducer from '../reducers';
+import { compose, createStore } from "redux";
+import { persistReducer, persistStore } from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import rootReducer from "../reducers";
 
 let composeEnhancers = compose;
 
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   // Access the Redux DevTools extension only in the browser
   composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 }
 
 const persistConfig = {
-  key: 'root',
+  key: "root",
   storage,
 };
 

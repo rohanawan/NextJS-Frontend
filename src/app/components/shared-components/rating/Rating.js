@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
 
+/* eslint-disable */
 const RatingBar = ({ rating }) => {
-    const validatedRating = Math.max(0, Math.min(5, Math.floor(rating)));
+  const validatedRating = Math.max(0, Math.min(5, Math.floor(rating)));
 
   return (
     <div className="flex items-center">
