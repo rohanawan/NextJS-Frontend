@@ -1,12 +1,11 @@
-"use client"
+"use client";
 
-import React from 'react';
-import { Providers } from '../app/redux/Providers';
-import {store} from '../app/redux/store';
-import Login from '../app/auth/signin/page';
+import React from "react";
+import { Providers } from "../app/redux/Providers";
+import { store } from "../app/redux/store";
+import Login from "../app/auth/signin/page";
 
 function App() {
-  
   return (
     <>
       <Login />

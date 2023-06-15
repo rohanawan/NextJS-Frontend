@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  modules: true
+  modules: true,
 };
 
 module.exports = nextConfig;
