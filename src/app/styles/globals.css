@@ -10,6 +10,9 @@
     height: 50px;
     animation: spin 1s linear infinite;
   }
+.width-modal{
+  width: 500px !important;
+}
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
