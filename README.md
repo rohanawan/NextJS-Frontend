@@ -1,32 +1,70 @@
-## Getting Started
+## PRODUCT MANGEMENT
 
-First, run the development server:
+Prerequisite
+
+1- Create a .env file in the root directory of Frontend copy everything from .env.example
+2- Replace the values with your desired values in the .env file.
+
+## Quick Start
+
+To run a project, simply run:
+
+To install dependencies on both side
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm install 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Commands
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To run project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For FrontEnd
+```bash
+npm run dev 
+```
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+The environment variables can be found and modified in the `.env` file. They come with these default values:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+NEXT_PUBLIC_BACKEND_URL='your_backend_url'
+NEXT_PUBLIC_ENDPOINT_URL='https://dummyjson.com'
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+FrontEnd
+```
+src\
+ |--auth\           # Auth Files login/signup
+ |--components\     # Components Files
+ |--config\         # Environment variables and configuration related things
+ |--interceptos\    # Api Handling
+ |--redux\          # State Mangement
+ |--styles\         # Css styling Files
+ |--services\       # Api Services
+ |--Utils\          # Utility File
+ |--page.js         # Next app
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Library Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+ |--Yup
+ |--Joi
+ |--Axios
+ |--Chart.js
+ |--Formik
+ |--Eslint
+ |--Prettier
+ |--TailwinCSS
+ |--Loadash
+ |--HeadlessUi/React
+ |--React-Table
+ |--React-Toastify
+```
+
+
+Happy Hacking!
